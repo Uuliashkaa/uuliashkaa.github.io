@@ -14,7 +14,7 @@ function level1() {
   population = 2;
   document.getElementById('popul').innerHTML = population;
   document.getElementById('info').innerHTML =
-    'Размер популяции должен быть равен 158 к 10 поколению. Надо поставить 1 точку';
+    'Размер популяции должен быть равен 3 к 10 поколению. Надо поставить 1 точку';
   drawField();
 }
 
@@ -191,10 +191,10 @@ function count_population() {
 
 function check1level() {
   
-  if (count == 10 && population == 158) {
+  if (count == 10 && population == 3) {
     stopLife();
     document.getElementById('info').innerHTML = 'You score!';
-  } else if (count > 10 && population != 158) {
+  } else if (count > 10 && population != 3) {
     stopLife();
     document.getElementById('info').innerHTML = 'Didn’t work, Try again';
   }
